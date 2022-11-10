@@ -51,7 +51,7 @@ jobs:
      - name: FundsOut
        if: ${{ !(contains(fromJSON(github.event.issue.body).budget, 'Incoming'))  &&  !(contains(fromJSON(github.event.issue.body).budget, 'Swap')) }}
        run: |
-         echo "fCol=#008eb3" >> "$GITHUB_ENV"
+         echo "fCol=#544c7c" >> "$GITHUB_ENV"
          echo "fProcess=Amount Paid" >> "$GITHUB_ENV"
          echo "fTitle=Outgoing" >> "$GITHUB_ENV"
          
